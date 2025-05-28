@@ -1,0 +1,136 @@
+.public-query-management {
+  padding: 1.5rem 2rem;
+  background-color: #f6f9ff;
+  min-height: 100vh;
+}
+
+.header {
+  background: #0A1E46;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.success-message {
+  background-color: rgba(46, 202, 106, 0.1);
+  color: #2eca6a;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.queries-list {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(1, 41, 112, 0.1);
+}
+
+.queries-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.queries-table th {
+  text-align: left;
+  padding: 1rem;
+  color: #012970;
+  font-weight: 600;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.queries-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #012970;
+}
+
+.department-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: rgba(65, 84, 241, 0.1);
+  color: #4154F1;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.edit-btn,
+.remove-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-btn {
+  background: rgba(65, 84, 241, 0.1);
+  color: #4154F1;
+}
+
+.edit-btn:hover {
+  background: rgba(65, 84, 241, 0.2);
+}
+
+.remove-btn {
+  background: rgba(255, 91, 92, 0.1);
+  color: #ff5b5c;
+}
+
+.remove-btn:hover {
+  background: rgba(255, 91, 92, 0.2);
+}
+
+.no-results {
+  text-align: center;
+  padding: 2rem;
+  color: #012970;
+  font-size: 1.125rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #012970;
+  font-size: 1.125rem;
+}
+
+.error {
+  text-align: center;
+  padding: 1rem;
+  color: #ff5b5c;
+  background: rgba(255, 91, 92, 0.1);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .public-query-management {
+    padding: 1rem;
+  }
+
+  .queries-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .actions {
+    white-space: nowrap;
+  }
+} 

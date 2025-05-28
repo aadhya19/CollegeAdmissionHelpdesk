@@ -1,0 +1,127 @@
+.announcement-form-container {
+  padding: 1.5rem 2rem;
+  background-color: #f6f9ff;
+  min-height: 100vh;
+}
+
+.header {
+  background: #0A1E46;
+  color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(1, 41, 112, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4154F1;
+  box-shadow: 0 0 0 2px rgba(65, 84, 241, 0.2);
+}
+
+.error-message {
+  color: #ff5b5c;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgba(255, 91, 92, 0.1);
+  border-radius: 8px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.form-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-actions button[type="submit"] {
+  background: rgba(65, 84, 241, 0.1);
+  color: #4154F1;
+}
+
+.form-actions button[type="submit"]:hover {
+  background: rgba(65, 84, 241, 0.2);
+}
+
+.form-actions button[type="button"] {
+  background: rgba(255, 91, 92, 0.1);
+  color: #ff5b5c;
+}
+
+.form-actions button[type="button"]:hover {
+  background: rgba(255, 91, 92, 0.2);
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #012970;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .announcement-form-container {
+    padding: 1rem;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+} 
